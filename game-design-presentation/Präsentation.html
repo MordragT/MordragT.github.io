@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Zwischenstand Morning Routine</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/night.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+# Morning Routine
+</script></section><section  data-markdown><script type="text/template">
+## 01 Übersicht
+
+![first_image](ressources/first.png)
+</script></section><section  data-markdown><script type="text/template">
+### 01.01 Grundelemente
+
+![technologie](ressources/technologie.png)
+![mechaniken](ressources/mechaniken.png)
+![story](ressources/story.png)
+![ästhetik](ressources/ästhetik.png)
+</script></section><section  data-markdown><script type="text/template">
+#### Technologie
+
+- für den Pc, Tastatur
+- Englisch
+- Unity Engine
+</script></section><section ><section data-markdown><script type="text/template">
+#### Mechaniken
+
+![mechaniken_konkrete](ressources/mechaniken_concrete.png)
+- verschiedene Räume
+</script></section><section data-markdown><script type="text/template">
+- Altern des Charakters
+  - Schwieriegkeitsgrad
+  - ein Lebensabschnitt hat mehrere Level inne
+- Zeit diskret (Lebensabschnitte)
+- Objektinteraktion dauert eine gewisse Zeit
+</script></section></section><section  data-markdown><script type="text/template">
+#### Story
+
+- Spieler durchläuft eine Morgenroutine
+- durchaus unabhängig vom Thema
+</script></section><section  data-markdown><script type="text/template">
+#### Ästhetik
+
+![aesthetics](ressources/first.png)
+- Oldschool 2D
+</script></section><section  data-markdown><script type="text/template">
+#### Spielort
+
+- Desktop
+- Leseecke bisher nicht geplannt
+</script></section><section  data-markdown><script type="text/template">
+#### Spielertyp
+
+![spielertyp](ressources/spielertyp.png)
+</script></section><section ><section data-markdown><script type="text/template">
+#### Motivation
+
+- Fertigstellung
+- Freischalten von Leveln
+</script></section><section data-markdown><script type="text/template">
+- visuell und auditativ durch Timer, Aufgabenzettel
+![checklist](ressources/checklist.png)
+</script></section></section><section  data-markdown><script type="text/template">
+## 02 Projekt Status
+</script></section><section  data-markdown><script type="text/template">
+#### Vertical Cut?
+
+- es fehlen Stressobjekte
+- Feedback noch zu schwammig
+- Spielfortschritt mit freischaltenden Leveln fehlt
+</script></section><section  data-markdown><script type="text/template">
+## 03 Peer Review
+
+- da noch viele Funktionen fehlen
+  - Feedback in vielen Teilen nur begrenzt möglich
+- Tutorial gewünscht auch wenn Steuerung intuitiv
+- Laufenmechanik noch nicht optimal, teils "stecken bleiben"
+- Grafik und bisheriges Feedback gut
+</script></section><section  data-markdown><script type="text/template">
+## 04 Probleme
+
+- viel Arbeit in anderen Fächern (Zeitmangel)
+- deutlich mehr Detailprobleme als anfangs gedacht
+- Probleme mit gleichzeitigem Arbeiten mit Git (4 Personen)
+  - Abhilfe mittles Feature Branches
+</script></section><section  data-markdown><script type="text/template">
+## 05 Arbeitsaufteilung
+
+![arbeitsaufteilung](ressources/arbeitsaufteilung.png)
+
+- Programmierung wird teils von allen übernommen
+</script></section><section  data-markdown><script type="text/template">
+## 06 Zeitplan und geplante Abgabe
+
+- bis nach der Klausurenphase weiteres arbeiten wie bisher
+  - jeder arbeitet nach seinen Möglichkeiten weiter
+- nach der ersten Klausurenphase Crunch Time
+  - bis dahin guten Plan entwickeln was alles gestrichen wird
+  - lieber zu viel als zu wenig streichen um wirklich fertig zu werden
+</script></section><section ><section data-markdown><script type="text/template">
+## 07 Gameplay
+
+![gameplay3](ressources/gameplay3.png)
+</script></section><section data-markdown><script type="text/template">
+![gameplay0](ressources/gameplay0.png)
+</script></section><section data-markdown><script type="text/template">
+![gameplay1](ressources/gameplay1.png)
+</script></section><section data-markdown><script type="text/template">
+![gameplay2](ressources/gameplay2.png)
+</script></section></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"slide"}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
