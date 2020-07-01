@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Considering open source</title>
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/night.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+# Considering open source
+</script></section><section ><section data-markdown><script type="text/template">
+## Sharing because of self benefits ?
+
+- Free contributions
+</script></section><section data-markdown><script type="text/template">
+#### But
+
+- Not able to make money ?
+- People only take advantage of your work ?
+</script></section></section><section  data-markdown><script type="text/template">
+## Code Quality
+
+- More eyes on the project
+- Bugs are discovered faster
+- Old coding habits are easily identified and change over time
+</script></section><section  data-markdown><script type="text/template">
+## Community
+
+- Potential employees that already have insights in your project
+- Company becomes more popular
+- Recognition
+</script></section><section  data-markdown><script type="text/template">
+## Popularity
+
+- Becoming an open standard
+- Encourages many external tools based on your project
+- Leads to more contributions to your software
+</script></section><section  data-markdown><script type="text/template">
+## Failing
+
+- Code is not "wasted"
+- Other people can pick up were you left
+- Or just read the code to get a foundation for a own implementation
+</script></section><section ><section data-markdown><script type="text/template">## Start developing open source software
+
+1. Choose a License
+2. Publish your work
+</script></section><section data-markdown><script type="text/template">
+## Choosing a License: Help i am not a lawyer
+
+- many open source licenses exist
+- permissive (MIT Apache)
+- non-permissive (GPL)
+- in the middle (MPL)
+- no custom licenses
+- https://choosealicense.com/licenses/
+</script></section><section data-markdown><script type="text/template">
+## Publishing your work
+
+- github
+- gitlab
+- ...
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Summary
+
+- Not able to make money ?
+- Low Cost of development
+- Big companys need support
+- Community and enterprise edition
+</script></section><section data-markdown><script type="text/template">
+- People only take advantage of your work ?
+- Actually a good thing
+</script></section></section><section  data-markdown><script type="text/template">
+## Sources
+
+- "Why Open Source" in https://opensource.google/docs/why/
+- "Why Open Source" in https://www.elastic.co/about/why-open-source
+- "10 Reasons Open Source is Good for Business" in https://www.pcworld.com/article/209891/10_reasons_open_source_is_good_for_business.html
+- "6 motivations for consuming or publishing open source software" in https://opensource.com/life/15/12/why-open-source</script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"slide"}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
