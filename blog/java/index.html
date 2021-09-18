@@ -7,7 +7,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/build/css/main.css?id=d41d8cd98f00b204e980">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/solarized-light.min.css">
     <style>
         * {
@@ -76,61 +75,52 @@
         </div>
     </nav>
 </header>
+
         
-
-<h1 class="text-center">Java - Introduction</h1>
-<h4 class="text-center">Mordrag</h4>
+<h1 class="text-center title">
+  Java - Introduction
+</h1>
+<h4 class="text-center title">
+  Thomas Wehmöller
+</h4>
 <br><br>
-<img src="/assets/images/java.jpg" class="img-fluid rounded" alt="...">
-<br><br>
-<div>
-            <a class="btn btn-secondary btn-sm" href="/blog/categories/java">java</a>
-    </div>
+<img src="&#x2F;img&#x2F;java.jpg" class="img-fluid rounded" alt="...">
 <br><br>
 
-<h3>What is Java ?</h3>
 
+
+  <a class="btn btn-secondary btn-sm" href="/categories/java">java</a>
+
+<br><br>
+
+<h3 id="what-is-java">What is Java ?</h3>
 <p>Java is a <mark>object oriented</mark> programming language that is widely adopted in the industry. Unlike other Programming languages like C, Java uses a so called <mark>garbage collector</mark> for memory management. This means that you cannot directly access adresses like in C++ with Pointers. The Syntax of Java is very similar to C++. Additionally Java doesn't compile down to machine code but to so called <mark>bytecode</mark> that you can recognize by the <mark>.class</mark> ending. This Bytecode can then be executed by the <mark>JVM</mark>(Java Virtual Machine). If you haven't understood everything above, that is no problem everything will make more sense when you actually use java. But if you are curious about the different topics feel free to google it.</p>
-
-<h3>Hello World</h3>
-
+<h3 id="hello-world">Hello World</h3>
 <p>When learning a new Programming Language it is tradition to write a first programm wich prints out <mark>Hello World</mark> to the terminal. So that is what we will be doing next.</p>
-
-<pre><code class="language-java">public class FirstProgram {
+<pre data-lang="java" class="language-java "><code class="language-java" data-lang="java">public class FirstProgram {
     public static void main(String[] args) {
         System.out.println("Hello World");
     }
 }
 </code></pre>
-
-<p>Now i will go through this Code step by step and explain every bit of it. In the first line we say <code>public class FirstProgram</code> which means that we have a public object of the name FirstProgram. <mark>Public</mark> means that you can access this class from everywhere, but that is not important now. Remember that Java is object oriented ? Great, so we have to write every Code we have inside so called <mark>classes</mark>. Let me make a short analogy to make things clearer. A Class is similar to a toolbox. You can have a toolbox of wood-tools where you have maybe a bunch of different saws. In Java you would now write <code>public class WoodTools</code>, but what if i now actually want to saw ? Now we get to the next line in our code, <code>public static void main(String[] args)</code>. This is a so called method where we can make complex calculations or well print "Hello World". As before public handles the access and <code>static</code> declares that there is only one instance of our main program, if you dont exactly understand static that is for now no problem just remember to write it before youre main method. The next keyword is <code>void</code> this is the <mark>return type</mark> of our method, so in this case we have no return value. The name <code>main</code> declares that this is where all the logic is executed. For now we will skip the <code>String[] args</code> part and look at our final line. <code>System.out.println("Hello World")</code> this is the only line that is executed in our program and really is self explanatory, we print the line "Hello World" to our terminal.</p>
-
-<h3>Using IntelliJ to Compile our Code</h3>
-
+<p>Now i will go through this Code step by step and explain every bit of it. In the first line we say <code>public class FirstProgram</code> which means that we have a public object of the name FirstProgram. <mark>Public</mark> means that you can access this class from everywhere, but that is not important now. Remember that Java is object oriented ? Great, so we have to write every Code we have inside so called <mark>classes</mark>. Let me make a short analogy to make things clearer. A Class is similar to a toolbox. You can have a toolbox of wood-tools where you have maybe a bunch of different saws. In Java you would now write <code>public class WoodTools</code>, but what if i now actually want to saw ? Now we get to the next line in our code, <code>public static void main(String[] args)</code>. This is a so called method where we can make complex calculations or well print &quot;Hello World&quot;. As before public handles the access and <code>static</code> declares that there is only one instance of our main program, if you dont exactly understand static that is for now no problem just remember to write it before youre main method. The next keyword is <code>void</code> this is the <mark>return type</mark> of our method, so in this case we have no return value. The name <code>main</code> declares that this is where all the logic is executed. For now we will skip the <code>String[] args</code> part and look at our final line. <code>System.out.println(&quot;Hello World&quot;)</code> this is the only line that is executed in our program and really is self explanatory, we print the line &quot;Hello World&quot; to our terminal.</p>
+<h3 id="using-intellij-to-compile-our-code">Using IntelliJ to Compile our Code</h3>
 <p>There are many IDE that you can use to compile your Java Code and execute it, but in my opinion IntelliJ is the best one out there at the moment. IntelliJ is free and open source and can be installed on all the major platforms. For a basic overview on how to use IntelliJ, i suggest watching the following video.</p>
-
-<p><br></p>
-
+<br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c0efB_CKOYo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p><br></p>
-
-<h3>Summary</h3>
-
-<h4>Java</h4>
-
+<br>
+<h3 id="summary">Summary</h3>
+<h4 id="java">Java</h4>
 <ul>
 <li>object oriented</li>
 <li>uses a garbage collector</li>
 <li>compiles down to bytecode, .class ending
-
 <ul>
 <li>can be executed by JVM</li>
-</ul></li>
 </ul>
-
-<h4>Hello World</h4>
-
+</li>
+</ul>
+<h4 id="hello-world-1">Hello World</h4>
 <ul>
 <li>Public: Handles Access</li>
 <li>Objects are called classes</li>
@@ -139,11 +129,14 @@
 <li><code>System.out.println()</code>: prints to the terminal</li>
 </ul>
 
+
+
     </div>
 
     <footer class="bg-secondary">
     <div class="text-white text-center font-italic">Copyright © Mordrag 2021</div>
 </footer>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
