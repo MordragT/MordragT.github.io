@@ -5,117 +5,213 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/solarized-light.min.css">
-    <style>
-        * {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-
-        html {
-            position: relative;
-            min-height: 100%;
-        }
-
-        body {
-            /* Margin bottom by footer height */
-            margin-bottom: 100px;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            /* Set the fixed height of the footer here */
-            height: 60px;
-            line-height: 60px;
-            /* Vertically center the text there */
-        }
-
-        .card-columns {
-            column-count: 3;
-        }
-    </style>
+    <link href="/style.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
-    <div class="container text-white">
-
+<body class="has-background-black-bis">
+    <div class="container has-text-white">
         <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-        <a class="navbar-brand" href="/">Mordrag</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">Mordrag</a>
+        </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/blog/">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact/">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about/">About me</a>
-                </li>
-            </ul>
-            <div class="btn-toolbar ml-auto" role="toolbar">
-                <div class="btn-group">
-                    <a class="btn btn-secondary" href="https://github.com/MordragT" target="_blank"><i
-                            class="fa fa-github"></i></a>
-                    <a class="btn btn-secondary" href="https://www.youtube.com/channel/UCzndJgF47jww1dcB-PO7g1Q"
-                        target="_blank"><i class="fa fa-youtube"></i></a>
-                    <a class="btn btn-secondary" href="https://steamcommunity.com/id/mordragt"
-                        target="_blank"><i class="fa fa-steam"></i></a>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a href="/blog/" class="navbar-item">Blog</a>
+                <a href="/contact/" class="navbar-item">Contact</a>
+                <a href="/about/" class="navbar-item">About me</a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="buttons has-addons">
+                    <a class="button" href="https://github.com/MordragT" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="button" href="https://www.youtube.com/channel/UCzndJgF47jww1dcB-PO7g1Q" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a class="button" href="https://steamcommunity.com/id/mordragt" target="_blank">
+                        <i class="fa-brands fa-steam"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
 </header>
-
         
-<h1 class="text-center">About me</h1>
+<h1 class="title is-1 has-text-centered">About me</h1>
 <br><br>
-<img src="/img/me.jpg" alt="..." class="rounded-circle row mx-auto" width=384 height=384>
-<br><br>
-<div class="text-center">
-    <p>Hello and welcome to my Website</p>
-    <p>My Name is Thomas and i am currently studying Computer Science.</p>
-    <br><br>
-    <h4>Background</h4>
-    <p>German</p>
-    <h4>Living in</h4>
-    <p>Aachen, Germany</p>
-    <h4>Age</h4>
-    <p>21</p>
-    <h4>Interests</h4>
-    <p>Coding</p>
-    <p>Working out</p>
-    <p>Gaming</p>
-    <p>Cooking</p>
-    <h4>Favourite Tech</h4>
-    <p>Rust</p>
-    <p>Laravel</p>
-    <p>Linux</p>
+
+<div class="columns">
+    <div class="column is-one-quarter">
+        <figure class="image">
+            <img src="/img/me.jpg" alt="..." class="is-rounded">
+        </figure>
+    </div>
+    <div class="column content">
+        <p>
+            Hello and welcome to my website!
+            My name is Thomas, and I'm currently a master's student studying Computer Science at FH Aachen.
+            When I'm not coding, you can find me exploring the latest technology trends, whipping up something delicious
+            in the kitchen, or enjoying a good social game or fitness session.
+        </p>
+    </div>
 </div>
+<br><br>
+
+<h2 class="title is-2 has-text-primary">Experience</h2>
+
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="title is-3">Co-Founder and Co-Chairman</h3>
+            <h4 class="subtitle is-4">Bayernallee 7 e.V.</h4>
+        </div>
+        <div class="column is-one-third has-text-right">
+            <h5 class="title is-5">Aachen</h5>
+            <h6 class="subtitle is-6">Apr 2023 - Nov 2023</h6>
+        </div>
+    </div>
+    <div class="content">
+        <ul>
+            <li>Helping to shape the founding of the association and the development of the articles of association,
+                rules of procedure and financial regulations, among other things</li>
+            <li>Representation of residents' interests towards the property management</li>
+            <li>Moderation of meetings (general meeting, senate, etc.)</li>
+            <li>Organization of events and activities for the residents</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="title is-3">Network Administrator</h3>
+            <h4 class="subtitle is-4">Bayernallee 7 Dormitory</h4>
+        </div>
+        <div class="column is-one-third has-text-right">
+            <h5 class="title is-5">Aachen</h5>
+            <h6 class="subtitle is-6">Nov 2020 - Nov 2023</h6>
+        </div>
+    </div>
+    <div class="content">
+        <ul>
+            <li>Provision and administration of virtual machines as well as configuration
+                and maintenance of digital services (website, Mail, etc.) through the use of Nix and Proxmox</li>
+            <li>Connecting residents to the intranet/internet</li>
+            <li>Development of various web applications with PHP, Tera, Markdown, CSS, and Javascript</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="title is-3">Intern</h3>
+            <h4 class="subtitle is-4">Utimaco</h4>
+        </div>
+        <div class="column is-one-third has-text-right">
+            <h5 class="title is-5">Aachen</h5>
+            <h6 class="subtitle is-6">15. Jun 2021 - 12. Nov 2021</h6>
+        </div>
+    </div>
+    <div class="content">
+        <ul>
+            <li>Conceptual design and development of a prototype with REST API functionality based on the Utimaco
+                product CryptoServer LAN</li>
+            <li>Developing a REST API using Spring MVC, Java, Vue and Javascript</li>
+            <li>Creating a web interface for REST API prototype demonstration</li>
+            <li>Execution and development of tests</li>
+            <li>Creating documentation for REST API and installation</li>
+        </ul>
+    </div>
+</section>
+
+<h2 class="title is-2 has-text-primary">Skills</h2>
+
+<section class="section">
+    <div class="fixed-grid">
+        <div class="grid">
+            <strong class="cell">Spoken Languages</strong>
+            <div class="cell">German (mother tongue), English (fluent)</div>
+            <strong class="cell">Paradigms</strong>
+            <div class="cell">Proficient in functional, imperative and object‑oriented programming</div>
+            <strong class="cell">Advanced</strong>
+            <div class="cell">Rust, Nix, Nixos</div>
+            <strong class="cell">Intermediate</strong>
+            <div class="cell">Kotlin, Java, HTML5, JS, TS, Tera, Python, Typst, Unix, Git</div>
+            <strong class="cell">Basic</strong>
+            <div class="cell">PHP, CSS, SASS, C++, Latex, Docker, Laravel, Spring, Vue, React, REST API, (No‑)SQL,
+                Kanban, Scrum</div>
+            <strong class="cell">Other</strong>
+            <div class="cell">Driving License</div>
+        </div>
+    </div>
+</section>
+
+
+<h2 class="title is-2 has-text-primary">Education</h2>
+
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="title is-3">M. Eng. Information Systems Engineering</h3>
+            <h4 class="subtitle is-4">FH Aachen</h4>
+        </div>
+        <div class="column is-one-quarter has-text-right">
+            <h5 class="title is-5">Aachen</h5>
+            <h6 class="subtitle is-6">Sep 2022 - Today</h6>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="title is-3">B. Sc. Informatics</h3>
+            <h4 class="subtitle is-4">FH Aachen</h4>
+        </div>
+        <div class="column is-one-quarter has-text-right">
+            <h5 class="title is-5">Aachen</h5>
+            <h6 class="subtitle is-6">Sep 2018 - Aug 2022</h6>
+        </div>
+    </div>
+    <div class="content">
+        <ul>
+            <li>
+                Bachelor thesis topic: Reproducible and fault‑tolerant package management for Linux written in Rust
+            </li>
+            <li>Bachelor thesis grade: 1.0</li>
+            <li>Focus: Software engineering</li>
+            <li>Final grade: 1.8</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="title is-3">General Qualification for University Entrance</h3>
+            <h4 class="subtitle is-4">St. Antonius Gymnasium</h4>
+        </div>
+        <div class="column is-one-quarter has-text-right">
+            <h5 class="title is-5">Lüdinghausen</h5>
+            <h6 class="subtitle is-6">Aug 2010 - Aug 2018</h6>
+        </div>
+    </div>
+    <div class="content">
+        <ul>
+            <li>Final grade: 2.8</li>
+        </ul>
+    </div>
+</section>
 
 
     </div>
-
-    <footer class="bg-secondary">
-    <div class="text-white text-center font-italic">Copyright © Mordrag 2021</div>
+    <footer class="footer">
+    <div class="content has-text-centered">Copyright © Mordrag 2021</div>
 </footer>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
-    <script>
-        hljs.initHighlightingOnLoad();
-    </script>
 </body>
 
 </html>

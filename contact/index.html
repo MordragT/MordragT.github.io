@@ -5,119 +5,77 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/solarized-light.min.css">
-    <style>
-        * {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-
-        html {
-            position: relative;
-            min-height: 100%;
-        }
-
-        body {
-            /* Margin bottom by footer height */
-            margin-bottom: 100px;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            /* Set the fixed height of the footer here */
-            height: 60px;
-            line-height: 60px;
-            /* Vertically center the text there */
-        }
-
-        .card-columns {
-            column-count: 3;
-        }
-    </style>
+    <link href="/style.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
-    <div class="container text-white">
-
+<body class="has-background-black-bis">
+    <div class="container has-text-white">
         <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-        <a class="navbar-brand" href="/">Mordrag</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">Mordrag</a>
+        </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/blog/">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact/">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about/">About me</a>
-                </li>
-            </ul>
-            <div class="btn-toolbar ml-auto" role="toolbar">
-                <div class="btn-group">
-                    <a class="btn btn-secondary" href="https://github.com/MordragT" target="_blank"><i
-                            class="fa fa-github"></i></a>
-                    <a class="btn btn-secondary" href="https://www.youtube.com/channel/UCzndJgF47jww1dcB-PO7g1Q"
-                        target="_blank"><i class="fa fa-youtube"></i></a>
-                    <a class="btn btn-secondary" href="https://steamcommunity.com/id/mordragt"
-                        target="_blank"><i class="fa fa-steam"></i></a>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a href="/blog/" class="navbar-item">Blog</a>
+                <a href="/contact/" class="navbar-item">Contact</a>
+                <a href="/about/" class="navbar-item">About me</a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="buttons has-addons">
+                    <a class="button" href="https://github.com/MordragT" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="button" href="https://www.youtube.com/channel/UCzndJgF47jww1dcB-PO7g1Q" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a class="button" href="https://steamcommunity.com/id/mordragt" target="_blank">
+                        <i class="fa-brands fa-steam"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
 </header>
-
         
-<h1 class="text-center">Contact</h1>
+<h1 class="title is-1 has-text-centered">Contact</h1>
 <br><br>
-<div class="row">
-    <form class="col-6 mx-auto" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/scrat_games@gmx.de"
-        method="post">
-        <fieldset id="fs-frm-inputs">
-            <div class="form-group">
-                <label for="full-name">Full Name</label>
-                <input class="form-control" type="text" name="name" id="full-name" placeholder="First and Last"
-                    required="">
-            </div>
-            <div class="form-group">
-                <label for="email-address">Email Address</label>
-                <input class="form-control" type="email" name="_replyto" id="email-address"
-                    placeholder="email@domain.tld" required="">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" rows="5" name="message" id="message"
-                    placeholder="Dont hesitate to write a long message." required=""></textarea>
-            </div>
-            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-        </fieldset>
-        <input class="btn btn-secondary" type="submit" value="Submit">
-    </form>
-</div>
 
-
+<form accept-charset="utf-8" action="https://formsubmit.co/el/bifena" method="post">
+    <div class="field">
+        <label for="full-name" class="label">Full Name</label>
+        <div class="control">
+            <input type="text" class="input" name="name" id="full-name" placeholder="First and Last" required>
+        </div>
     </div>
 
-    <footer class="bg-secondary">
-    <div class="text-white text-center font-italic">Copyright © Mordrag 2021</div>
-</footer>
+    <div class="field">
+        <label for="email-address" class="label">Email Address</label>
+        <div class="control">
+            <input type="email" class="input" name="email" id="email-address" placeholder="email@domain.tld" required>
+        </div>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
-    <script>
-        hljs.initHighlightingOnLoad();
-    </script>
+    <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+            <textarea class="textarea" name="message" placeholder="Dont hesitate to write a long message."></textarea>
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="control">
+            <input class="button is-primary" type="submit"></input>
+        </div>
+    </div>
+</form>
+
+    </div>
+    <footer class="footer">
+    <div class="content has-text-centered">Copyright © Mordrag 2021</div>
+</footer>
 </body>
 
 </html>

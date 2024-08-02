@@ -5,122 +5,82 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/solarized-light.min.css">
-    <style>
-        * {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-
-        html {
-            position: relative;
-            min-height: 100%;
-        }
-
-        body {
-            /* Margin bottom by footer height */
-            margin-bottom: 100px;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            /* Set the fixed height of the footer here */
-            height: 60px;
-            line-height: 60px;
-            /* Vertically center the text there */
-        }
-
-        .card-columns {
-            column-count: 3;
-        }
-    </style>
+    <link href="/style.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
-    <div class="container text-white">
-
+<body class="has-background-black-bis">
+    <div class="container has-text-white">
         <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-        <a class="navbar-brand" href="/">Mordrag</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">Mordrag</a>
+        </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/blog/">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact/">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about/">About me</a>
-                </li>
-            </ul>
-            <div class="btn-toolbar ml-auto" role="toolbar">
-                <div class="btn-group">
-                    <a class="btn btn-secondary" href="https://github.com/MordragT" target="_blank"><i
-                            class="fa fa-github"></i></a>
-                    <a class="btn btn-secondary" href="https://www.youtube.com/channel/UCzndJgF47jww1dcB-PO7g1Q"
-                        target="_blank"><i class="fa fa-youtube"></i></a>
-                    <a class="btn btn-secondary" href="https://steamcommunity.com/id/mordragt"
-                        target="_blank"><i class="fa fa-steam"></i></a>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a href="/blog/" class="navbar-item">Blog</a>
+                <a href="/contact/" class="navbar-item">Contact</a>
+                <a href="/about/" class="navbar-item">About me</a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="buttons has-addons">
+                    <a class="button" href="https://github.com/MordragT" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="button" href="https://www.youtube.com/channel/UCzndJgF47jww1dcB-PO7g1Q" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a class="button" href="https://steamcommunity.com/id/mordragt" target="_blank">
+                        <i class="fa-brands fa-steam"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
 </header>
-
         
-<h1 class="text-center">Hello, i'm Thomas</h1>
+<h1 class="title is-1 has-text-centered">Hello, i'm Thomas</h1>
 <br><br>
-<div class="row col-md-4">
-    <h3>Latest Article</h3>
-</div>
-<br>
-<div class="row">
-    <div class="col-md-3 mb-4">
-    
-    
-    <div class="card bg-secondary">
-    <img src="&#x2F;img&#x2F;coding.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">My Projects - Overview</h5>
-        <p class="card-text">This is an overview over man projects i do&#x2F;did so far. There are still many projects missing...</p>
-        <a href="https://mordragt.github.io/blog/projects/" class="btn btn-dark">Read more</a>
-    </div>
-    <div class="card-footer">
-        April 28, 2021
-    </div>
-</div>
 
+<h2 class="title is-2">Latest Article</h2>
+<div class="columns">
+    <div class="column is-one-quarter">
+        
+        
+        
+<div class="card">
+    <div class="card-image">
+        <figure class="image is-4by3">
+            <img src="&#x2F;img&#x2F;coding.jpg" alt="...">
+        </figure>
     </div>
-<p class="offset-md-1 col-md-8">Welcome to my Website, i will post here frequently <mark>tutorials</mark> for informatics
-        since i am studying <mark>Computer Science</mark> at the FH in Aachen.
-        At the moment i am in my sixth semester and searching for an internship.
-        If you have a question about a topic on my website feel free to <mark>contact</mark> me,
-        i will most likely answer on <mark>steam</mark> or <mark>youtube</mark>.</p>
+
+    <div class="card-content">
+        <h5 class="title is-5">My Projects - Overview</h5>
+        <h6 class="subtitle is-6">April 28, 2021</h6>
+        <div class="content">
+            This is an overview over man projects i do&#x2F;did so far. There are still many projects missing...
+        </div>
+        <a href="https://mordragt.github.io/blog/projects/" class="button is-primary">Read more</a>
+    </div>
 </div>
 
+    </div>
+    <div class="column content">
+        <p>Welcome to my Website, i will post here frequently <strong>tutorials</strong> for informatics
+since i am studying <strong>Computer Science</strong> at the FH in Aachen.
+At the moment i am in my sixth semester and searching for an internship.
+If you have a question about a topic on my website feel free to <strong>contact</strong> me,
+i will most likely answer on <strong>steam</strong> or <strong>youtube</strong>.</p>
 
     </div>
+</div>
 
-    <footer class="bg-secondary">
-    <div class="text-white text-center font-italic">Copyright © Mordrag 2021</div>
+    </div>
+    <footer class="footer">
+    <div class="content has-text-centered">Copyright © Mordrag 2021</div>
 </footer>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
-    <script>
-        hljs.initHighlightingOnLoad();
-    </script>
 </body>
 
 </html>
