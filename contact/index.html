@@ -11,34 +11,39 @@
 <body class="has-background-black-bis">
     <div class="container has-text-white">
         <header>
-    <nav class="navbar is-transparent">
-        <div class="navbar-brand">
-            <a href="/" class="navbar-item">Mordrag</a>
-        </div>
+            <nav class="navbar is-transparent">
+                <div class="navbar-brand">
+                    <a href="/" class="navbar-item">Mordrag</a>
 
-        <div class="navbar-menu">
-            <div class="navbar-start">
-                <a href="/blog/" class="navbar-item">Blog</a>
-                <a href="/contact/" class="navbar-item">Contact</a>
-                <a href="/about/" class="navbar-item">About me</a>
-            </div>
-
-            <div class="navbar-end">
-                <div class="buttons has-addons">
-                    <a class="button" href="https://github.com/MordragT" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a class="button" href="https://www.youtube.com/channel/UCzndJgF47jww1dcB-PO7g1Q" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a class="button" href="https://steamcommunity.com/id/mordragt" target="_blank">
-                        <i class="fa-brands fa-steam"></i>
+                    <a role="button" data-target="navMenu" class="navbar-burger">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </a>
                 </div>
-            </div>
-        </div>
-    </nav>
-</header>
+
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a href="/blog/" class="navbar-item">Blog</a>
+                        <a href="/contact/" class="navbar-item">Contact</a>
+                        <a href="/about/" class="navbar-item">About me</a>
+                    </div>
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="https://github.com/MordragT" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a class="navbar-item" href="https://www.youtube.com/channel/UCzndJgF47jww1dcB-PO7g1Q"
+                            target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a class="navbar-item" href="https://steamcommunity.com/id/mordragt" target="_blank">
+                            <i class="fa-brands fa-steam"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
         
 <h1 class="title is-1 has-text-centered">Contact</h1>
 <br><br>
@@ -74,8 +79,24 @@
 
     </div>
     <footer class="footer">
-    <div class="content has-text-centered">Copyright © Mordrag 2021</div>
-</footer>
+        <div class="content has-text-centered">Copyright © Thomas Wehmöller 2024</div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+
+        });
+    </script>
 </body>
 
 </html>

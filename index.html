@@ -11,76 +11,233 @@
 <body class="has-background-black-bis">
     <div class="container has-text-white">
         <header>
-    <nav class="navbar is-transparent">
-        <div class="navbar-brand">
-            <a href="/" class="navbar-item">Mordrag</a>
-        </div>
+            <nav class="navbar is-transparent">
+                <div class="navbar-brand">
+                    <a href="/" class="navbar-item">Mordrag</a>
 
-        <div class="navbar-menu">
-            <div class="navbar-start">
-                <a href="/blog/" class="navbar-item">Blog</a>
-                <a href="/contact/" class="navbar-item">Contact</a>
-                <a href="/about/" class="navbar-item">About me</a>
-            </div>
-
-            <div class="navbar-end">
-                <div class="buttons has-addons">
-                    <a class="button" href="https://github.com/MordragT" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a class="button" href="https://www.youtube.com/channel/UCzndJgF47jww1dcB-PO7g1Q" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a class="button" href="https://steamcommunity.com/id/mordragt" target="_blank">
-                        <i class="fa-brands fa-steam"></i>
+                    <a role="button" data-target="navMenu" class="navbar-burger">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </a>
                 </div>
-            </div>
-        </div>
-    </nav>
-</header>
+
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a href="/blog/" class="navbar-item">Blog</a>
+                        <a href="/contact/" class="navbar-item">Contact</a>
+                        <a href="/about/" class="navbar-item">About me</a>
+                    </div>
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="https://github.com/MordragT" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a class="navbar-item" href="https://www.youtube.com/channel/UCzndJgF47jww1dcB-PO7g1Q"
+                            target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a class="navbar-item" href="https://steamcommunity.com/id/mordragt" target="_blank">
+                            <i class="fa-brands fa-steam"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
         
-<h1 class="title is-1 has-text-centered">Hello, i'm Thomas</h1>
+<h1 class="title is-1 has-text-centered">Thomas Wehmöller</h1>
+<h2 class="subtitle is-2 has-text-centered">I create things.</h2>
 <br><br>
 
-<h2 class="title is-2">Latest Article</h2>
-<div class="columns">
-    <div class="column is-one-quarter">
-        
-        
-        
-<div class="card">
-    <div class="card-image">
-        <figure class="image is-4by3">
-            <img src="&#x2F;img&#x2F;coding.jpg" alt="...">
-        </figure>
-    </div>
+<section class="section">
+    <div class="content">
+        <p>Hello and welcome to my website!
+My name is Thomas, and I'm currently a master's student studying Computer Science at FH Aachen.
+When I'm not coding, you can find me exploring the latest technology trends, whipping up something delicious
+in the kitchen, or enjoying a good social game or fitness session.</p>
 
-    <div class="card-content">
-        <h5 class="title is-5">My Projects - Overview</h5>
-        <h6 class="subtitle is-6">April 28, 2021</h6>
-        <div class="content">
-            This is an overview over man projects i do&#x2F;did so far. There are still many projects missing...
+    </div>
+</section>
+
+<h2 class="title is-2 has-text-primary">Latest Article</h2>
+
+
+
+<section class="section">
+    <article class="media">
+        <div class="media-left" style="width: 192px; height: 144px">
+            <figure class="image is-4by3">
+                <img src="&#x2F;img&#x2F;coding.jpg" alt="..." width="512" height="384" />
+
+            </figure>
         </div>
-        <a href="https://mordragt.github.io/blog/projects/" class="button is-primary">Read more</a>
-    </div>
-</div>
+        <div class="media-content">
+            <h5 class="title is-5">My journey learning to program - A recap</h5>
+            <h6 class="subtitle is-6">August 05, 2024</h6>
+            <div class="content">
+                Starting my university journey in 2018 with absolutely no programming experience...
+            </div>
+            <a href="https://mordragt.github.io/blog/projects/" class="button is-primary">Read more</a>
+        </div>
+    </article>
+</section>
 
-    </div>
-    <div class="column content">
-        <p>Welcome to my Website, i will post here frequently <strong>tutorials</strong> for informatics
-since i am studying <strong>Computer Science</strong> at the FH in Aachen.
-At the moment i am in my sixth semester and searching for an internship.
-If you have a question about a topic on my website feel free to <strong>contact</strong> me,
-i will most likely answer on <strong>steam</strong> or <strong>youtube</strong>.</p>
 
+<h2 class="title is-2 has-text-primary">Projects</h2>
+
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="title is-3">Grax</h3>
+            <h4 class="subtitle is-4">Graph Library</h4>
+        </div>
+        <div class="column is-one-third has-text-right">
+            <span class="tag is-dark">Rust</span>
+            <span class="tag is-success">MIT</span>
+        </div>
     </div>
-</div>
+    <div class="content">
+        <ul>
+            <li>Minimum Cost Flow</li>
+            <li>Maximum Flow</li>
+            <li>Traveling Salesman Problem</li>
+            <li>Shortest Path</li>
+            <li>Minimum Spanning Tree</li>
+        </ul>
+        <a href="https://github.com/MordragT/grax" class="button is-dark" target="_blank">
+            <span class="icon">
+                <i class="fa-brands fa-github"></i>
+            </span>
+            <span>GitHub</span>
+        </a>
+    </div>
+</section>
+
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="title is-3">NixOS</h3>
+            <h4 class="subtitle is-4">My NixOS configuration</h4>
+        </div>
+        <div class="column is-one-third has-text-right">
+            <span class="tag is-info">Nix</span>
+            <span class="tag is-success">MIT</span>
+        </div>
+    </div>
+    <div class="content">
+        <ul>
+            <li>Impermanence</li>
+            <li>Intel One API</li>
+            <li>Various services</li>
+        </ul>
+        <a href="https://github.com/MordragT/nixos" class="button is-dark" target="_blank">
+            <span class="icon">
+                <i class="fa-brands fa-github"></i>
+            </span>
+            <span>GitHub</span>
+        </a>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="title is-3">Nix-Templates</h3>
+            <h4 class="subtitle is-4">My Nix Templates</h4>
+        </div>
+        <div class="column is-one-third has-text-right">
+            <span class="tag is-info">Nix</span>
+            <span class="tag is-success">MIT</span>
+        </div>
+    </div>
+    <div class="content">
+        <ul>
+            <li>Python (micromamba, poetry, venv)</li>
+            <li>Rust (stable, nightly)</li>
+            <li>Android</li>
+            <li>Many more</li>
+        </ul>
+        <a href="https://github.com/MordragT/nix-templates" class="button is-dark" target="_blank">
+            <span class="icon">
+                <i class="fa-brands fa-github"></i>
+            </span>
+            <span>GitHub</span>
+        </a>
+    </div>
+</section>
+
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="title is-3">Bib Kit</h3>
+            <h4 class="subtitle is-4">Hayagriva Extension for Firefox</h4>
+        </div>
+        <div class="column is-one-third has-text-right">
+            <span class="tag is-dark">Rust</span>
+            <span class="tag is-warning">Firefox</span>
+            <span class="tag is-success">MIT</span>
+        </div>
+    </div>
+    <div class="content">
+        <ul>
+            <li>Provides an firefox extension to create citations in the hayagriva format used by typst.</li>
+        </ul>
+        <a href="https://github.com/MordragT/bib_kit" class="button is-dark" target="_blank">
+            <span class="icon">
+                <i class="fa-brands fa-github"></i>
+            </span>
+            <span>GitHub</span>
+        </a>
+    </div>
+</section>
+
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="title is-3">TypeDown</h3>
+            <h4 class="subtitle is-4"> Simple Markup language, easily embeddable and extendable. </h4>
+        </div>
+        <div class="column is-one-third has-text-right">
+            <span class="tag is-dark">Rust</span>
+            <span class="tag is-success">MIT</span>
+        </div>
+    </div>
+    <div class="content">
+        <ul>
+            <li>Inbuilt scripting</li>
+            <li>VScode Extension (Language Server)</li>
+            <li>Plugin Support</li>
+        </ul>
+        <a href="https://github.com/MordragT/type-down" class="button is-dark" target="_blank">
+            <span class="icon">
+                <i class="fa-brands fa-github"></i>
+            </span>
+            <span>GitHub</span>
+        </a>
+    </div>
+</section>
 
     </div>
     <footer class="footer">
-    <div class="content has-text-centered">Copyright © Mordrag 2021</div>
-</footer>
+        <div class="content has-text-centered">Copyright © Thomas Wehmöller 2024</div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+
+        });
+    </script>
 </body>
 
 </html>
